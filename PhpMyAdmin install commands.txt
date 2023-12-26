@@ -1,0 +1,103 @@
+sudo apt update
+
+sudo apt install apache2
+
+downloading..........
+
+open the browser search localhost
+now check the /var/www/public_html
+
+sudo apt install libapache2-mod-php -y
+downloading.................
+
+sudo systemctl restart apache2
+next sudo gnome-text-editor /var/www/html/phpinfo.php
+
+write the code
+<>php phpinfo() ?> save it
+->open the browser localhost/phpinfo.php
+now the terminal 
+php -v
+sudo apt install mysql-server
+downloading............
+
+sudo apt install mysql-client
+downloading..........
+
+sudo apt install php8.1-mysql
+downloading.........
+
+sudo apt install php8.1-curl
+downloading...........
+
+php-v
+
+sudo systemctl status mysql
+
+sudo apt install phpmyadmin
+downloading......
+select on apache2 downloading...
+phpmyadmn with dbconfig-common click on yes
+generate the phpmyadmin password of mysql application
+
+complete downloaded....
+
+sudo systemctl restart apache2
+
+open the browser localhost/phpmyadmin -> page will not be open
+
+sudo gnome-text-editor /etc/apache2/apache2.conf
+
+add few line in apache2.conf
+
+Include /etc/phpmyadmin/apache.conf
+and save it
+
+sudo systemctl restart apache2
+sudo /etc/init.d/mysql restart 
+restarting my sql
+
+now open the browser into phpmyadmin
+
+
+sudo gnome-text-editor /etc/phpmyadmin/config-db.php
+
+edit the dbuser='phpmyadmin' dbpass='yourpassword'
+
+now login into phpmyadmin
+
+after that
+
+
+sudo gome-text-editor  /var/www/html/nuthan.html
+
+localhost/nuthan.html
+
+
+downloading done successfully
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
